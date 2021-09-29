@@ -6,7 +6,7 @@ import discord
 #/////////////////////////////////////////////////////
 
 client = discord.Client()
-token = "ODUyNjYyNDE1ODgzMzcwNTQ2.YUKHpQ.FoJA5hjvHLRAPAk60rN69JdEnFg"
+token = "Coloque o seu token aqui//put your token here"
 
 def champagne(cmd):
     subprocess.call(cmd, shell=True)
