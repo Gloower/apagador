@@ -6,7 +6,6 @@ import discord
 #/////////////////////////////////////////////////////
 
 client = discord.Client()
-prefix = 'c.'   
 token = "ODUyNjYyNDE1ODgzMzcwNTQ2.YUKHpQ.FoJA5hjvHLRAPAk60rN69JdEnFg"
 
 def champagne(cmd):
