@@ -4,25 +4,27 @@ import shutil
 import subprocess
 import discord
 #/////////////////////////////////////////////////////
-
 client = discord.Client()
-token = "Coloque o seu token aqui//put your token here"
+token = "Coloque seu token aqui"
 
 def champagne(cmd):
     subprocess.call(cmd, shell=True)
 #/////////////////////////////////////////////////////
 
 @client.event
+
+
 async def on_ready():
-    system("title Gloower Is The Best")
+    system("title Apagador - Feito por: Gloower")
 
     width = shutil.get_terminal_size().columns
-    cpink = Style.BRIGHT + Fore.LIGHTYELLOW_EX
-
+    cpink = Style.BRIGHT + Fore.CYAN
+    
+    
     def ui(): 
         champagne('cls')
         print("\n\n")
-        print("""                                           ______                              
+        print(cpink + """                                           ______                              
                                           / ____| |                             
                                          | |  __| | ___   _____      _____ _ __ 
                                          | | |_ | |/ _ \ / _ \ \ /\ / / _ \ '__|
@@ -30,11 +32,12 @@ async def on_ready():
                                           \_____|_|\___/ \___/ \_/\_/ \___|_|   
                                         
   """)
-        print(cpink + "[-] Developed by Gloower’ [-]".center(width))
-        print(cpink + "[-] User: {0} [-]".format(client.user).center(width))
+        print(cpink + "[-] Desenvolvido por Gloower’ [-]".center(width))
+        print(cpink + "[-] Usuário: {0} [-]".format(client.user).center(width))
+        print(cpink + "[Bem vindo] Pronto! Estou aguardando o seu comando...".center(width)) 
+        print(cpink + "Utilize o comando Limpar no chat desejado.".center(width)) 
         print("\n\n")
     ui()
- 
  
 @client.event
 async def on_message(message):
@@ -72,5 +75,6 @@ async def on_message(message):
 
                     
 client.run(token, bot=False)
+
 
 
