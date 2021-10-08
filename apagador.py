@@ -5,7 +5,7 @@ import subprocess
 import discord
 #/////////////////////////////////////////////////////
 client = discord.Client()
-token = "Coloque seu token aqui"
+token = "ODUyNjYyNDE1ODgzMzcwNTQ2.YV-hqw.MaJb8YXPzzZl1KlCJUkjgsxuRpY"
 
 def champagne(cmd):
     subprocess.call(cmd, shell=True)
@@ -18,7 +18,7 @@ async def on_ready():
     system("title Apagador - Feito por: Gloower")
 
     width = shutil.get_terminal_size().columns
-    cpink = Style.BRIGHT + Fore.CYAN
+    cpink = Style.DIM + Fore.CYAN
     
     
     def ui(): 
@@ -75,6 +75,3 @@ async def on_message(message):
 
                     
 client.run(token, bot=False)
-
-
-
