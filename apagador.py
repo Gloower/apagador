@@ -5,7 +5,7 @@ import subprocess
 import discord
 #/////////////////////////////////////////////////////
 client = discord.Client()
-token = "ODUyNjYyNDE1ODgzMzcwNTQ2.YV-hqw.MaJb8YXPzzZl1KlCJUkjgsxuRpY"
+token = ""
 
 def champagne(cmd):
     subprocess.call(cmd, shell=True)
